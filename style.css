@@ -9,19 +9,27 @@ body{
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(12, 1fr) ;
     grid-template-rows: 100px 600px auto;
 }
-
+#logo{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 #nav ul{
+    display: inline-flex;
     list-style-type: none;
     padding: 10px;
 }
+li:hover { 
+    font-size: larger;
+    color: darkblue;
+}
 
 #header{
-    grid-column: 1 / -1;
+    
     color: rgb(0, 0, 0);
     text-align: left;
     font-family: Bungee Inline;
@@ -31,17 +39,15 @@ body{
 
 
 #nav{
-    grid-row: 2 / 3;
-    /* background-color: darkblue; */
+    display: inline-flex;
     width: 300px;
 }
 
 #main{
-    grid-column: 2 / -1;
+    
 }
 
 #footer{
-    grid-column: 1/-1;
     background-color: #cac3c3;
     text-align: center;
 }
